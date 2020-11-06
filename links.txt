@@ -1,6 +1,9 @@
 Final Project Repo:
 https://github.com/bradtraversy/proshop_mern
 
+Commit Page for Repo:
+https://github.com/bradtraversy/proshop_mern/commits/master?after=8ae842795cc86f3a980892ba8ecc26a0ef73163e+69&branch=master
+
 Download VSCode:
 https://code.visualstudio.com/
 
