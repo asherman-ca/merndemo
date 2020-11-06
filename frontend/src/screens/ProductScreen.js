@@ -14,9 +14,11 @@ const ProductScreen = ({ match }) => {
       </Link>
       <Row>
         <Col md={6}>
+          {/* the fluid prop keeps the image in its container */}
           <Image src={product.image} alt={product.name} fluid />
         </Col>
         <Col md={3}>
+          {/* flush prop takes away border */}
           <ListGroup variant='flush'>
             <ListGroup.Item>
               <h3>{product.name}</h3>
@@ -52,6 +54,7 @@ const ProductScreen = ({ match }) => {
                 </Row>
               </ListGroup.Item>
               <ListGroup.Item>
+                {/* using 'btn-block' to make it stretch across container */}
                 <Button
                   className='btn-block'
                   type='button'
