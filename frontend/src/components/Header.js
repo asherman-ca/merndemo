@@ -1,7 +1,7 @@
 import React from 'react'
+// linkcontainer does the same thing as Link from react-router-dom but allows the wrapping of bootstrap components
 import { LinkContainer } from 'react-router-bootstrap'
 import { Navbar, Nav, Container } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
