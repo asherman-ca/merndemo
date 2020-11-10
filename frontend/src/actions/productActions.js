@@ -5,6 +5,7 @@ import {
   PRODUCT_LIST_FAIL
 } from '../constants/productConstants'
 
+// redux thunk detects that we return a function and allows for async work
 export const listProducts = () => async dispatch => {
   try {
     dispatch({ type: PRODUCT_LIST_REQUEST })
