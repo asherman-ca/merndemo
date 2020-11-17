@@ -69,6 +69,10 @@ export const register = (name, email, password) => async dispatch => {
       config
     )
 
+    // this is necessary for the loading state on the register screen, which will hang until register.loading is false
+    // this could all be changed to work off user_login_loading and userInfo there.
+    // Seems like user reducers could be cleverly condensed under a single "user" slice of the store, with several actions being able to put in loading state and update peices of it.
+
     dispatch({
       type: USER_REGISTER_SUCCESS,
       payload: data
@@ -148,6 +152,18 @@ export const updateUserProfile = user => async (dispatch, getState) => {
       type: USER_UPDATE_PROFILE_SUCCESS,
       payload: data
     })
+
+    dispatch({
+      type: USER_DETAILS_SUCCESS,
+      payload: data
+    })
+
+    dispatch({
+      type: USER_LOGIN_SUCCESS,
+      payload: data
+    })
+
+    localStorage.setItem('userInfo', JSON.stringify(data))
   } catch (error) {
     dispatch({
       type: USER_UPDATE_PROFILE_FAIL,
