@@ -17,3 +17,5 @@ mongodb.com
 hosting using mongo db atlas
 
 test users:
+asd@asd.asd
+asd
