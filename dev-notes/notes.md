@@ -20,4 +20,6 @@ test users:
 -asd@asd.asd
 asd
 
--
+dev paypal creds:
+sb-rpg47v7112490@personal.example.com
+t2c?11EU
