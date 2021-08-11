@@ -11,6 +11,7 @@ const Header = () => {
   const userLogin = useSelector(state => state.userLogin)
   const { userInfo } = userLogin
 
+  // TODO: make this reroute user to login screen (see userlistscreen useeffect hook)
   const logoutHandler = () => {
     dispatch(logout())
   }

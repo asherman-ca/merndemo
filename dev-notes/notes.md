@@ -27,6 +27,6 @@ test admin:
 admin@example.com
 123456
 
-dev paypal creds:
+dev paypal user:
 sb-rpg47v7112490@personal.example.com
 t2c?11EU
