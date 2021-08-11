@@ -17,8 +17,15 @@ mongodb.com
 hosting using mongo db atlas
 
 test users:
--asd@asd.asd
+asd@asd.asd
 asd
+
+john@example.com
+123456
+
+test admin:
+admin@example.com
+123456
 
 dev paypal creds:
 sb-rpg47v7112490@personal.example.com
